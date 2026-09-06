@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dawn Noir</title>
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --fg-light: #ffffff;
+      --accent: #cccccc;
+      --font-main: Arial, sans-serif;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--font-main);
+      background: var(--bg-dark);
+      color: var(--fg-light);
+      line-height: 1.6;
+    }
+    header {
+      padding: 0;
+      border-bottom: 1px solid var(--accent);
+    }
+    header img.bio-header {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    nav {
+      margin: 1rem 2rem;
+    }
+    nav a {
+      color: var(--fg-light);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--accent);
+      margin-right: 0.5rem;
+    }
+    nav a:hover {
+      background: var(--accent);
+      color: var(--bg-dark);
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 2rem;
+    }
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .placeholder-box {
+      border: 1px solid var(--accent);
+      padding: 1rem;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #111111;
+    }
+    .media-row {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .media-box {
+      flex: 1;
+      min-width: 300px;
+      border: 1px solid var(--accent);
+      padding: 1rem;
+      background: #111111;
+    }
+    .media-box iframe {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+    }
+    footer {
+      padding: 2rem;
+      border-top: 1px solid var(--accent);
+      text-align: center;
+    }
+    footer img.bio-header {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      nav {
+        margin: 1rem;
+      }
+      nav a {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+        padding: 0.75rem 1rem;
+        text-align: center;
+      }
+      main {
+        padding: 1rem;
+      }
+      section {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+      section h2 {
+        font-size: 1.25rem;
+      }
+      .media-row {
+        gap: 1rem;
+      }
+      .media-box {
+        min-width: 100%;
+      }
+      .media-box iframe {
+        height: 250px;
+      }
+      .photo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      }
+    }
+    @media (max-width: 480px) {
+      .media-box iframe {
+        height: 200px;
+      }
+      .photo-grid {
+        grid-template-columns: 1fr;
+      }
+      section h2 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="photos/bio_header.png" alt="Dawn Noir" class="bio-header" />
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="live.html">Live</a>
+    <a href="press.html">Press</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Music & Videos</h2>
+      <div class="media-row">
+        <div class="media-box">
+          <h3>Music</h3>
+          <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/artist/4akxsTsjiVYzlfeW8yhOFY?utm_source=generator" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="media-box">
+          <h3>Videos</h3>
+          <iframe height="352" src="https://www.youtube.com/embed/UCE-uNoAYWOmGdoxwfqLyAXQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Gallery</h2>
+      <div class="photo-grid">
+        <img src="photos/DawnNoir_logo.png" alt="Dawn Noir Logo" />
+        <img src="photos/DawnNoir-8.jpg" alt="Dawn Noir" />
+        <img src="photos/DawnNoir_BAND_PHOTO.jpg" alt="Band Photo" />
+        <img src="photos/dawn_noir_landscape.png" alt="Landscape" />
+        <img src="photos/20251015_0186.jpg" alt="Live Photo 1" />
+        <img src="photos/20251015_0838.jpg" alt="Live Photo 2" />
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>

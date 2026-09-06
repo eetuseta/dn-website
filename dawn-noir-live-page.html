@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dawn Noir - Live</title>
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --fg-light: #ffffff;
+      --accent: #cccccc;
+      --font-main: Arial, sans-serif;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--font-main);
+      background: var(--bg-dark);
+      color: var(--fg-light);
+      line-height: 1.6;
+    }
+    header {
+      padding: 0;
+      border-bottom: 1px solid var(--accent);
+    }
+    header img.bio-header {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    nav {
+      margin: 1rem 2rem;
+    }
+    nav a {
+      color: var(--fg-light);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--accent);
+      margin-right: 0.5rem;
+    }
+    nav a:hover {
+      background: var(--accent);
+      color: var(--bg-dark);
+    }
+    main {
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .gigs {
+      margin-bottom: 3rem;
+    }
+    .gigs h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .gig {
+      padding: 1rem;
+      border-bottom: 1px solid var(--accent);
+    }
+    .gig:last-child {
+      border-bottom: none;
+    }
+    .gig .date {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .gig .venue {
+      margin-bottom: 0.5rem;
+    }
+    .gallery {
+      margin-top: 2rem;
+    }
+    .gallery h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--accent);
+    }
+    footer {
+      padding: 2rem;
+      border-top: 1px solid var(--accent);
+      text-align: center;
+    }
+    footer img.bio-header {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="photos/bio_header.png" alt="Dawn Noir" class="bio-header" />
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="live.html">Live</a>
+    <a href="press.html">Press</a>
+  </nav>
+  <main>
+    <h1>Live</h1>
+    <section class="gigs">
+      <h2>Upcoming Gigs</h2>
+      <div class="gig">
+        <div class="date">October 20, 2026</div>
+        <div class="venue">Kuu Club, Helsinki</div>
+      </div>
+      <div class="gig">
+        <div class="date">November 5, 2026</div>
+        <div class="venue">Rock Bear, Tampere</div>
+      </div>
+    </section>
+    <section class="gallery">
+      <h2>Live Photos</h2>
+      <div class="photo-grid">
+        <img src="photos/20251015_0838.jpg" alt="Live Photo 1" />
+        <img src="photos/20251015_0838.jpg" alt="Live Photo 2" />
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>
