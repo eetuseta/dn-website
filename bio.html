@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dawn Noir - Bio</title>
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --fg-light: #ffffff;
+      --accent: #cccccc;
+      --font-main: Arial, sans-serif;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--font-main);
+      background: var(--bg-dark);
+      color: var(--fg-light);
+      line-height: 1.6;
+    }
+    header {
+      padding: 0;
+      border-bottom: 1px solid var(--accent);
+    }
+    header img.bio-header {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    nav {
+      margin: 1rem 2rem;
+    }
+    nav a {
+      color: var(--fg-light);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--accent);
+      margin-right: 0.5rem;
+    }
+    nav a:hover {
+      background: var(--accent);
+      color: var(--bg-dark);
+    }
+    main {
+      padding: 2rem;
+    }
+    .bio-content {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .bio-image {
+      flex: 0 0 300px;
+    }
+    .bio-image img {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+    }
+    .bio-text {
+      flex: 1;
+    }
+    .bio-text p {
+      margin-bottom: 1rem;
+    }
+    
+    footer {
+      padding: 2rem;
+      border-top: 1px solid var(--accent);
+      text-align: center;
+    }
+    footer img.bio-header {
+      max-width: 100%;
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      nav {
+        margin: 1rem;
+      }
+      nav a {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+        padding: 0.75rem 1rem;
+        text-align: center;
+      }
+      main {
+        padding: 1rem;
+      }
+      .bio-content {
+        flex-direction: column;
+      }
+      .bio-image {
+        flex: 0 0 auto;
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="photos/bio_header.png" alt="Dawn Noir" class="bio-header" />
+  </header>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/bio.html">Bio</a>
+    <a href="/live.html">Live</a>
+    <a href="/press.html">Press</a>
+  </nav>
+  <main>
+    <div class="bio-content">
+      <div class="bio-text">
+        <p>The early stages of Dawn Noir began when João and Eetu, both passionate about music, decided to collaborate. After months of songwriting, Antti joined them with his energetic drumming, followed by Lennart, who added depth with his bass playing, helping to shape the band's unique alt-rock sound.</p>
+        <p>Ramping up to their debut EP "Was There a Better Way," which came out on all streaming platforms in February 2024, the band released four singles: "Frozen Sunspots," "Erase It," "Haunt Me," and "Putain," along with their respective videos. The next EP "Lost in Future Past" was released in 2025 with three music video singles, Serpent Eyes, Swallow the Sun and Ego Sickness.</p>
+        <p>By the end of 2026 Dawn Noir is heading to studio to record their first full length album and with the new songs, the band shifts to the next gear, and at times the pace is lifted to almost illegal levels, but they haven't forgotten the diversity and sensibility of their earlier releases, creating a unique blend of alt rock.</p>
+      </div>
+      <div class="bio-image">
+        <img src="photos/DawnNoir-10.jpg" alt="Dawn Noir" />
+      </div>
+    </div>
+  </main>
+  <footer>
+    <a href="mailto:dawnnoirband@gmail.com">dawnnoirband@gmail.com</a>
+  </footer>
+</body>
+</html>
