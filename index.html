@@ -3,7 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dawn Noir</title>
+  <title>Dawn Noir - Alt-Rock Band from Finland</title>
+  <meta name="description" content="Dawn Noir alt-rock band from Finland. Stream our music on Spotify, watch videos on YouTube, view photos and upcoming gigs." />
+  <meta name="keywords" content="Dawn Noir, alt-rock, band, Finland, music, live, gigs, Spotify, YouTube" />
+  <meta name="author" content="Dawn Noir" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.dawnnoir.band/" />
+  <meta property="og:title" content="Dawn Noir - Alt-Rock Band from Finland" />
+  <meta property="og:description" content="Dawn Noir alt-rock band from Finland. Stream our music on Spotify, watch videos on YouTube, view photos and upcoming gigs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.dawnnoir.band/" />
+  <meta property="og:image" content="https://www.dawnnoir.band/photos/DawnNoir-8.jpg" />
+  <meta property="og:site_name" content="Dawn Noir" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@dawnnoirband" />
+  <meta name="twitter:title" content="Dawn Noir - Alt-Rock Band from Finland" />
+  <meta name="twitter:description" content="Dawn Noir alt-rock band from Finland. Stream our music on Spotify, watch videos on YouTube, view photos and upcoming gigs." />
+  <meta name="twitter:image" content="https://www.dawnnoir.band/photos/DawnNoir-8.jpg" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Dawn Noir",
+  "description": "Finnish alt-rock band creating energetic and diverse music with sensibility",
+  "genre": "Alternative Rock",
+  "url": "https://www.dawnnoir.band/",
+  "logo": "https://www.dawnnoir.band/photos/DawnNoir-8.jpg",
+  "sameAs": [
+    "https://open.spotify.com/artist/4akxsTsjiVYzlfeW8yhOFY",
+    "https://www.youtube.com/channel/UCYourChannel"
+  ]
+}
+</script>
   <style>
     :root {
       --bg-dark: #000000;
@@ -187,16 +218,18 @@
 </head>
 <body>
   <header>
-    <img src="photos/bio_header.png" alt="Dawn Noir" class="bio-header" />
+    <img src="photos/bio_header.png" alt="Dawn Noir Finnish alt-rock band promotional header" class="bio-header" />
   </header>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/bio.html">Bio</a>
-    <a href="/live.html">Live</a>
-    <a href="/press.html">Press</a>
+  <nav aria-label="Main navigation">
+    <a href="/" aria-label="Dawn Noir homepage">Home</a>
+    <a href="/bio.html" aria-label="Dawn Noir band biography">Bio</a>
+    <a href="/live.html" aria-label="Dawn Noir live performances and gigs">Live</a>
+    <a href="/press.html" aria-label="Dawn Noir press kit and media resources">Press</a>
   </nav>
   <main>
-    <section>
+    <h1>Dawn Noir</h1>
+    <section aria-labelledby="music-section">
+      <h2 id="music-section">Music</h2>
       <div class="media-row">
         <div class="media-box">
           <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/artist/4akxsTsjiVYzlfeW8yhOFY?utm_source=generator" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -206,19 +239,19 @@
         </div>
       </div>
     </section>
-    <section>
-      <h2>Gallery</h2>
+    <section aria-labelledby="gallery-section">
+      <h2 id="gallery-section">Photo Gallery</h2>
       <div class="photo-grid">
-        <img src="photos/DawnNoir-8.jpg" alt="Dawn Noir" />
-        <img src="photos/DawnNoir_BAND_PHOTO.jpg" alt="Band Photo" />
-        <img src="photos/dawn_noir_landscape.png" alt="Landscape" />
-        <img src="photos/20251015_0186.jpg" alt="Live Photo 1" />
-        <img src="photos/20251015_0838.jpg" alt="Live Photo 2" />
+        <img src="photos/DawnNoir-8.jpg" alt="Dawn Noir band promotional photo" />
+        <img src="photos/DawnNoir_BAND_PHOTO.jpg" alt="Dawn Noir full band group photo" />
+        <img src="photos/dawn_noir_landscape.png" alt="Dawn Noir landscape promotional image" />
+        <img src="photos/20251015_0186.jpg" alt="Dawn Noir live performance photo" />
+        <img src="photos/20251015_0838.jpg" alt="Dawn Noir concert stage photo" />
       </div>
     </section>
   </main>
   <footer>
-    dawnnoirband@gmail.com
+    <p><a href="mailto:dawnnoirband@gmail.com" aria-label="Contact Dawn Noir via email">dawnnoirband@gmail.com</a></p>
   </footer>
   <div id="imageModal" class="modal" onclick="closeModal()">
     <span class="close">&times;</span>

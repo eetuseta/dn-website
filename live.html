@@ -3,7 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dawn Noir - Live</title>
+  <title>Dawn Noir - Live Performances</title>
+  <meta name="description" content="Dawn Noir live performances and upcoming gigs in Finland. Book us for your event. View live photos and stage information." />
+  <meta name="keywords" content="Dawn Noir, live, gigs, concerts, Finland, Helsinki, bookings, stage map" />
+  <meta name="author" content="Dawn Noir" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.dawnnoir.band/live.html" />
+  <meta property="og:title" content="Dawn Noir - Live Performances" />
+  <meta property="og:description" content="Dawn Noir live performances and upcoming gigs in Finland. Book us for your event." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.dawnnoir.band/live.html" />
+  <meta property="og:image" content="https://www.dawnnoir.band/photos/20251015_0838.jpg" />
+  <meta property="og:site_name" content="Dawn Noir" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dawn Noir - Live Performances" />
+  <meta name="twitter:description" content="Dawn Noir live performances and upcoming gigs in Finland. Book us for your event." />
+  <meta name="twitter:image" content="https://www.dawnnoir.band/photos/20251015_0838.jpg" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "name": "Dawn Noir",
+  "url": "https://www.dawnnoir.band/",
+  "sameAs": [
+    "https://open.spotify.com/artist/4akxsTsjiVYzlfeW8yhOFY"
+  ]
+}
+</script>
   <style>
     :root {
       --bg-dark: #000000;
@@ -136,17 +162,18 @@
 </head>
 <body>
   <header>
-    <img src="photos/bio_header.png" alt="Dawn Noir" class="bio-header" />
+    <img src="photos/bio_header.png" alt="Dawn Noir Finnish alt-rock band header" class="bio-header" />
   </header>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/bio.html">Bio</a>
-    <a href="/live.html">Live</a>
-    <a href="/press.html">Press</a>
+  <nav aria-label="Main navigation">
+    <a href="/" aria-label="Dawn Noir homepage">Home</a>
+    <a href="/bio.html" aria-label="Dawn Noir biography">Bio</a>
+    <a href="/live.html" aria-current="page">Live</a>
+    <a href="/press.html" aria-label="Dawn Noir press kit">Press</a>
   </nav>
   <main>
-    <section class="gigs">
-      <h2>Upcoming Gigs</h2>
+    <h1>Dawn Noir Live</h1>
+    <section class="gigs" aria-labelledby="gigs-heading">
+      <h2 id="gigs-heading">Upcoming Gigs</h2>
       <div class="gig">
         <div class="date">14.10.</div>
         <div class="venue">On the Rocks, Helsinki</div>
@@ -160,20 +187,23 @@
         <div class="venue">Nirvana/Fuusio, Turku</div>
       </div>
     </section>
-    <p>Bookings: <a href="mailto:dawnnoirband@gmail.com">dawnnoirband@gmail.com</a></p>
-    <p>Channel list and stage map found <a href="https://drive.google.com/file/d/1JFST0dJz6V-gdWLbDIVXDTqG2gvV_AJU/view">here</a>.</p>
-    <section class="gallery">
-      <h2>Live Photos</h2>
+    <section aria-labelledby="booking-heading">
+      <h2 id="booking-heading">Bookings</h2>
+      <p>Contact us for bookings: <a href="mailto:dawnnoirband@gmail.com" aria-label="Email Dawn Noir for bookings">dawnnoirband@gmail.com</a></p>
+      <p>Channel list and stage map: <a href="https://drive.google.com/file/d/1JFST0dJz6V-gdWLbDIVXDTqG2gvV_AJU/view" aria-label="Download stage map and channel list">Download here</a>.</p>
+    </section>
+    <section class="gallery" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Live Photos</h2>
       <div class="photo-grid">
-        <img src="photos/20251015_0838.jpg" alt="Live Photo 1" />
-        <img src="photos/20251015_0248.jpg" alt="Live Photo 2" />
-        <img src="photos/20251015_0512.jpg" alt="Live Photo 3" />
-        <img src="photos/20251015_0883.jpg" alt="Live Photo 4" />
+        <img src="photos/20251015_0838.jpg" alt="Dawn Noir live performance on stage" />
+        <img src="photos/20251015_0248.jpg" alt="Dawn Noir band member performing live" />
+        <img src="photos/20251015_0512.jpg" alt="Dawn Noir concert crowd interaction" />
+        <img src="photos/20251015_0883.jpg" alt="Dawn Noir full band live shot" />
       </div>
     </section>
   </main>
   <footer>
-    <a href="mailto:dawnnoirband@gmail.com">dawnnoirband@gmail.com</a>
+    <p><a href="mailto:dawnnoirband@gmail.com" aria-label="Contact Dawn Noir via email">dawnnoirband@gmail.com</a></p>
   </footer>
   <div id="imageModal" class="modal" onclick="closeModal()">
     <span class="close">&times;</span>
