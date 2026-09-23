@@ -62,6 +62,7 @@
     }
     nav {
       margin: 1rem 2rem;
+      position: relative;
     }
     nav a {
       color: var(--fg-light);
@@ -73,6 +74,32 @@
     nav a:hover {
       background: var(--accent);
       color: var(--bg-dark);
+    }
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      background: var(--bg-dark);
+      border: 1px solid var(--accent);
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      position: relative;
+      margin-bottom: 0.5rem;
+    }
+    .hamburger::before {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 2px;
+      background: var(--fg-light);
+      box-shadow: 0 6px 0 var(--fg-light), 0 12px 0 var(--fg-light);
+    }
+    .nav-links {
+      display: flex;
+      gap: 0.5rem;
     }
     main {
       padding: 2rem;
@@ -146,13 +173,34 @@
       nav {
         margin: 1rem;
       }
-      nav a {
+      .hamburger {
         display: block;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg-dark);
+        z-index: 100;
+        border-top: 1px solid var(--accent);
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .nav-links a {
         width: 100%;
         margin-bottom: 0.5rem;
         margin-right: 0;
         padding: 0.75rem 1rem;
         text-align: center;
+        border: 1px solid var(--accent);
+        border-top: none;
+      }
+      .nav-links a:first-child {
+        border-top: 1px solid var(--accent);
       }
       main {
         padding: 1rem;
@@ -172,10 +220,13 @@
     <img src="photos/bio_header.png" alt="Dawn Noir Finnish alt-rock band header" class="bio-header" />
   </header>
   <nav aria-label="Main navigation">
-    <a href="/" aria-label="Dawn Noir homepage">Home</a>
-    <a href="/bio.html" aria-current="page">Bio</a>
-    <a href="/live.html" aria-label="Dawn Noir live performances">Live</a>
-    <a href="/press.html" aria-label="Dawn Noir press kit">Press</a>
+    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav()"></button>
+    <div class="nav-links">
+      <a href="/" aria-label="Dawn Noir homepage">Home</a>
+      <a href="/bio.html" aria-current="page">Bio</a>
+      <a href="/live.html" aria-label="Dawn Noir live performances">Live</a>
+      <a href="/press.html" aria-label="Dawn Noir press kit">Press</a>
+    </div>
   </nav>
   <main>
     <h1>Dawn Noir Biography</h1>
@@ -217,6 +268,14 @@
         closeModal();
       }
     };
+
+    function toggleNav() {
+      const navLinks = document.querySelector('.nav-links');
+      const hamburger = document.querySelector('.hamburger');
+      navLinks.classList.toggle('active');
+      const isExpanded = navLinks.classList.contains('active');
+      hamburger.setAttribute('aria-expanded', isExpanded);
+    }
   </script>
 </body>
 </html>
